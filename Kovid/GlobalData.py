@@ -1,0 +1,3 @@
+import Kovid
+
+Kovid.GetGlobalData()
