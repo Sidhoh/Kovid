@@ -1,1 +1,1 @@
-import Kovid
+import kovid
