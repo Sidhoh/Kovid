@@ -1,5 +1,5 @@
 # Kovid V0.1.0
-A python lib to get info on covid-19
+A python api to get info on covid-19
 
 # Installation and Usage
 To install the api:
