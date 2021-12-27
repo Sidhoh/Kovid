@@ -5,7 +5,7 @@ A python api to get info on covid-19
 To install the api:
 
 ```
-pip install pip install git+git://github.com/roooof/Kovid.git
+pip install git+git://github.com/roooof/Kovid.git
 ```
 
 To import the api:
