@@ -11,14 +11,14 @@ pip install git+git://github.com/roooof/Kovid.git
 To import the api:
 
 ```python
-import kovid.Kovid
+import kovid
 ```
 Usage:
 
 ```python
 # To get global data
-kovid.Kovid.GetGlobalData()
+kovid.get_global_data()
 
 # To get data from all the countries
-kovid.Kovid.GetCountriesData()
+kovid.get_countries_data()
 ```
