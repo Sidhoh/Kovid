@@ -21,4 +21,7 @@ kovid.get_global_data()
 
 # To get data from all the countries
 kovid.get_countries_data()
+
+# To get data from a country
+kovid.get_country_data(USA)
 ```
