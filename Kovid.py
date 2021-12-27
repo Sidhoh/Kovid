@@ -12,5 +12,3 @@ def GetGlobalData():
 def GetCountryData():
     countryData = requests.get("https://coronavirus-19-api.herokuapp.com/countries")
     jprint(countryData.json())
-
-GetCountryData()
