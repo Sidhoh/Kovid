@@ -1,1 +1,1 @@
-from .Kovid import *
+import Kovid
