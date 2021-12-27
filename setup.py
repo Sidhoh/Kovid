@@ -10,7 +10,7 @@ setup(
     },
     author_email = "danduhman7@gmail.com",
     license = "MIT",
-    packages = find_packages(),
+    packages = ["kovid"],
     install_requires=[
         'requests'
     ]
