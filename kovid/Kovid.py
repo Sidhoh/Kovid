@@ -1,18 +1,36 @@
 import requests
 import json
 
-def __jprint(obj):
-    text = json.dumps(obj, sort_keys=True, indent=4)
-    print(text)
+globalData = requests.get("https://coronavirus-19-api.herokuapp.com/all")
 
 def get_global_data():
-    globalData = requests.get("https://coronavirus-19-api.herokuapp.com/all")
-    __jprint(globalData.json())
+    return globalData.json()
 
-def get_countries_data():
-    countries = requests.get("https://coronavirus-19-api.herokuapp.com/countries")
-    __jprint(countries.json())
-
-def get_country_data(country):
+def country_data(country):
     data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
-    __jprint(data.json())
+    return data.json()
+
+def get_global_cases():
+    return globalData.json()['cases']
+
+def get_global_deaths():
+    return globalData.json()['deaths']
+
+def get_global_recovered():
+    return globalData.json()['recovered']
+
+def get_country_cases(country):
+    data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
+    return data.json()['cases']
+
+def get_country_deaths(country):
+    data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
+    return data.json()['deaths']
+
+def get_country_recovered(country):
+    data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
+    return data.json()['recovered']
+
+def get_country_active(country):
+    data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
+    return data.json()['active']
