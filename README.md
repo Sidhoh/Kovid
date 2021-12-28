@@ -1,4 +1,4 @@
-# Kovid V0.1.0
+# Kovid V1.0.0
 A python api to get info on covid-19
 
 # Installation and Usage
