@@ -6,7 +6,7 @@ globalData = requests.get("https://coronavirus-19-api.herokuapp.com/all")
 def get_global_data():
     return globalData.json()
 
-def country_data(country):
+def get_country_data(country):
     data = requests.get("https://coronavirus-19-api.herokuapp.com/countries/" + country)
     return data.json()
 
